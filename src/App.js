@@ -7,6 +7,7 @@ import {
 import Home from "./Pages/Home";
 import Profile from "./Pages/Profile";
 import Posting from "./Pages/Posting";
+import Login from "./Pages/Login";
 
 const ProtectedRoute = ({ user, children }) => {
   console.log('queen')
@@ -28,16 +29,15 @@ const router = createBrowserRouter([
     </ProtectedRoute>,
   },
   {
-    path: "/login",
-    element: 
-    <Posting />
-  },
-  {
     path: "/",
     element: 
     <ProtectedRoute>
       <Home />
     </ProtectedRoute>
+  },
+  {
+    path: "/login",
+    element: <Login />
   }
 ])
 
