@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -23,7 +24,7 @@ export default function Home() {
                     <p className='text-[30px] font-bold'>Home</p>
                 </div>
                 <div className='flex gap-[20px] items-center hover:bg-[grey] p-[10px] rounded-[40px]'>
-                    <img src='./assets/svg-icon/plus.svg' className='w-[50px]'></img>
+                    <img src='./assets/svg-icon/plus.svg' className='w-[50px]' />
                     <p className='text-[30px] font-bold'>Plus</p>
                 </div>
                 <div className='flex gap-[20px] items-center hover:bg-[grey] p-[10px] rounded-[40px]'>
@@ -49,7 +50,7 @@ export default function Home() {
                     <input placeholder='Search' className='border-[2px] w-[80%]  px-[15px] rounded-full border-[black]'></input>
                 </div>
                 <div className='grid grid-cols-4 gap-[20px] mt-[10px]'>
-                    <div className='col-span-1 border-[2px] py-[3px]'>
+                    <div className='col-span-1 py-[3px]'>
                         <h3 className='text-center border-[black] border-[2px] rounded-full'>Jurusan</h3>
                     </div>
                     <div className='col-span-1 border-[2px] py-[3px]'>
